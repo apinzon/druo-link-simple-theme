@@ -25,6 +25,27 @@ if( function_exists('acf_add_local_field_group') ):
                 'rows' => '',
                 'new_lines' => '',
             ),
+            array(
+                'key' => 'field_616d1997520cf',
+                'label' => 'Template Box Width',
+                'name' => 'template_box_width',
+                'type' => 'number',
+                'instructions' => 'Fixed width of the box in the middle.',
+                'required' => 0,
+                'conditional_logic' => 0,
+                'wrapper' => array(
+                    'width' => '',
+                    'class' => '',
+                    'id' => '',
+                ),
+                'default_value' => 510,
+                'placeholder' => '',
+                'prepend' => '',
+                'append' => 'px',
+                'min' => '',
+                'max' => '',
+                'step' => '',
+            ),
         ),
         'location' => array(
             array(

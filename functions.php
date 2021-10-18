@@ -75,6 +75,53 @@ if ( ! function_exists( 'druo_simple_custom_css' ) ) {
     function druo_simple_custom_css() {
         if ( is_page() ) {
             $custom_css = get_field('custom_css');
+            $template_box_width = get_field('template_box_width');
+            // Define default template width.
+            if (empty($template_box_width)) {
+                $template_box_width = '510';
+            }
+            ?>
+            <style>
+                @media only screen and (min-width: <?php echo $template_box_width; ?>px) {
+                    .container {
+                        //padding-top: 30px;
+                        -webkit-box-pack: center;
+                        -webkit-justify-content: center;
+                        -moz-box-pack: center;
+                        -ms-flex-pack: center;
+                        justify-content: center;
+                        align-items: center;
+                        align-content: center;
+                        min-height: 100vh;
+                        flex-grow: 1;
+                    }
+                    .box-template {
+                        width: <?php echo $template_box_width; ?>px;
+                        margin: auto;
+                        -webkit-box-shadow: rgba(0,0,0,0.15) 0px 3px 15px 6px;
+                        -moz-box-shadow: rgba(0,0,0,0.15) 0px 3px 15px 6px;
+                        box-shadow: rgba(0,0,0,0.15) 0px 3px 15px 6px;
+                        border: 1px solid #E4E4E5;
+                        background-image: none;
+                        padding-bottom: 0;
+                        -webkit-border-radius: 10px;
+                        -moz-border-radius: 10px;
+                        border-radius: 10px;
+                    }
+                    .site-footer {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        min-height: 60px;
+                        line-height: 60px;
+                        margin-top: 50px;
+                        margin-bottom: 0;
+                        font-size: 13px;
+                        flex-shrink: 0;
+                    }
+                }
+            </style>
+            <?php
             if ( ! empty($custom_css) ) {
                 ?>
                 <style>
