@@ -1,0 +1,14 @@
+{
+  "name": "druo-simple",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "scss": "node-sass assets/scss -o assets/css --output-style=compressed"
+  },
+  "author": "Maksym Tsypliakov",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^6.0.1"
+  }
+}
