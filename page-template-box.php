@@ -2,9 +2,7 @@
 /**
  * Template Name: Page with a Box
  *
- * The template for displaying all single posts
- *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
+ * The template for displaying the content of a page in a box in the middle.
  *
  * @since DRUO Simple 1.0
  */

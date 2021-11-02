@@ -451,6 +451,15 @@ body {
   }
 }
 
+.page-template-page-template-embed, .page-template-page-template-embed {
+  .container {
+    -webkit-justify-content: unset;
+    justify-content: unset;
+    min-height: auto;
+    padding: 0;
+  }
+}
+
 .page-template-page-template-box {
   .container {
     article {
@@ -477,6 +486,12 @@ body {
   -o-transition: opacity .5s;
   -moz-transition: opacity .5s;
   transition: opacity .5s;
+}
+
+.embed-template {
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 .site-footer {

@@ -1,11 +1,19 @@
 <?php
 /**
- * The template for displaying all single posts.
+ * Template Name: Embed
+ *
+ * The template for displaying embed content
  *
  * @since DRUO Simple 1.0
  */
 
 get_header();
+
+?>
+
+<section class="embed-template">
+
+    <?php
 
     /* Start the Loop */
     while ( have_posts() ) :
@@ -18,4 +26,12 @@ get_header();
         }
     endwhile; // End of the loop.
 
-get_footer();
+    ?>
+</section>
+
+</div><!-- #page -->
+
+<?php wp_footer(); ?>
+
+</body>
+</html>
