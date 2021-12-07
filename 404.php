@@ -10,13 +10,15 @@
 get_header();
 ?>
 
-    <div class="error-404 not-found default-max-width">
-        <h1><?php echo esc_html__( '404', 'druo' ); ?></h1>
-        <h2><?php echo esc_html__( 'Page Not Found', 'druo' ); ?></h2>
+    <section class="box-template">
+        <div class="error-404 not-found default-max-width">
+            <h1><?php echo esc_html__( '404', 'druo' ); ?></h1>
+            <h2><?php echo esc_html__( 'Page Not Found', 'druo' ); ?></h2>
 
-        <a class="button" href="<?php echo esc_url( home_url() ); ?>"><span><?php echo esc_html__( 'Back Home', 'salient' ); ?> </span><i class="icon-button-arrow"></i></a>
+            <a class="button" href="<?php echo esc_url( home_url() ); ?>"><span><?php echo esc_html__( 'Back Home', 'salient' ); ?> </span><i class="icon-button-arrow"></i></a>
 
-    </div><!-- .error-404 -->
+        </div><!-- .error-404 -->
+    </section>
 
 <?php
 get_footer();

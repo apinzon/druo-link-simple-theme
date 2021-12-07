@@ -537,6 +537,7 @@ body {
 }
 
 .error-404 {
+  width: 100%;
   text-align: center;
   h1 {
     font-size: 150px;
@@ -565,7 +566,6 @@ button, .button {
   margin: 5px 0;
   min-width: 138px;
   outline: none;
-  padding: 0 25px;
   text-align: center;
   text-decoration: none;
   white-space: nowrap;

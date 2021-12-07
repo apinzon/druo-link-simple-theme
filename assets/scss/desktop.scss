@@ -1,3 +1,7 @@
+body.error404 {
+    background: #F0F0F1;
+}
+
 .container {
 //padding-top: 30px;
     -webkit-box-pack: center;
@@ -22,15 +26,19 @@
     font-size: 13px;
     flex-shrink: 0;
 }
+.error-404 {
+    padding: 50px 0;
+}
 .error-404 h1 {
-    font-size: 250px;
-    line-height: 250px;
+    font-size: 150px;
+    line-height: 150px;
 }
 .error-404 h2 {
     font-size: 54px;
 }
 button, .button {
     width: auto;
+    padding: 0 25px;
 }
 
 .wp-block-columns {
