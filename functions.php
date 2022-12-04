@@ -80,6 +80,7 @@ if ( ! function_exists( 'druo_simple_custom_css' ) ) {
         if ( is_page() ) {
             $custom_css = get_field('custom_css');
             $template_box_width = get_field('template_box_width');
+            $template_box_min_height = get_field('template_box_min_height');
         }
         // Define default template width.
         if (empty($template_box_width)) {
@@ -90,6 +91,7 @@ if ( ! function_exists( 'druo_simple_custom_css' ) ) {
             @media only screen and (min-width: <?php echo $template_box_width + 3; ?>px) {
                 .box-template {
                     width: <?php echo $template_box_width; ?>px;
+                    <?php if (!empty($template_box_min_height)):?>min-height: <?php echo $template_box_min_height; ?>px;<?php endif; ?>
                     margin: auto;
                     -webkit-box-shadow: rgba(0,0,0,0.15) 0px 3px 15px 6px;
                     -moz-box-shadow: rgba(0,0,0,0.15) 0px 3px 15px 6px;

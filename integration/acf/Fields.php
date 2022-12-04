@@ -45,6 +45,27 @@ if( function_exists('acf_add_local_field_group') ):
                 'max' => '',
                 'step' => '',
             ),
+            array(
+                'key' => 'field_6389b4e8ef17d',
+                'label' => 'Template Box Min Height',
+                'name' => 'template_box_min_height',
+                'type' => 'number',
+                'instructions' => 'Min height of the box in the middle.',
+                'required' => 0,
+                'conditional_logic' => 0,
+                'wrapper' => array(
+                    'width' => '',
+                    'class' => '',
+                    'id' => '',
+                ),
+                'default_value' => 650,
+                'placeholder' => '',
+                'prepend' => '',
+                'append' => 'px',
+                'min' => '',
+                'max' => '',
+                'step' => '',
+            ),
         ),
         'location' => array(
             array(
