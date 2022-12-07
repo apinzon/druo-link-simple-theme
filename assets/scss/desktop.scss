@@ -529,11 +529,6 @@ body .gform_legacy_markup_wrapper select.small.gfield_select + div.chosen-contai
 
 /* make the inputs a little larger for mobile devices */
 
-.gform_legacy_markup_wrapper input:not([type='radio']):not([type='checkbox']):not([type='image']):not([type='file']) {
-    line-height: 2;
-    min-height: 2rem;
-}
-
 .gform_legacy_markup_wrapper textarea {
     line-height: 1.5;
 }

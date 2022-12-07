@@ -2582,3 +2582,8 @@ div .gfield_repeater_cell {
 .gfield_repeater_value .gfield_repeater_value .gfield_repeater_item:first-child {
     padding-bottom: 0px;
 }
+
+.gform_legacy_markup_wrapper input:not([type='radio']):not([type='checkbox']):not([type='image']):not([type='file']) {
+    line-height: 2;
+    min-height: 2rem;
+}
