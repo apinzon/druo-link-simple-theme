@@ -7,6 +7,23 @@ if( function_exists('acf_add_local_field_group') ):
         'title' => 'Blank Canvas',
         'fields' => array(
             array(
+                'key' => 'field_6167b4e8ef17e',
+                'label' => 'Two column template content',
+                'name' => 'two_column_template_content',
+                'type' => 'wysiwyg',
+                'instructions' => 'Fill this input if you choose the 2 column template for this page.',
+                'required' => 0,
+                'conditional_logic' => 0,
+                'wrapper' => array(
+                    'width' => '',
+                    'class' => '',
+                    'id' => '',
+                ),
+                'placeholder' => '',
+                'rows' => 7,
+                'maxlength' => '',
+            ),
+            array(
                 'key' => 'field_615ea3ef51d57',
                 'label' => 'Custom CSS',
                 'name' => 'custom_css',
