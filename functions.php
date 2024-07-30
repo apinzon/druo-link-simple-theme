@@ -103,7 +103,7 @@ if ( ! function_exists( 'druo_simple_custom_css' ) ) {
                     -moz-border-radius: 10px;
                     border-radius: 10px;
                 }
-                <?php include get_template_directory() . '/assets/css/desktop.css'; ?>
+            <?php include get_template_directory() . '/assets/css/desktop.css'; ?>
             }
         </style>
         <?php
@@ -167,4 +167,9 @@ if ( ! function_exists( 'druo_simple_the_posts_navigation' ) ) {
             )
         );
     }
+}
+
+add_action( 'init', 'stop_heartbeat', 1 );
+function stop_heartbeat() {
+    wp_deregister_script('heartbeat');
 }
