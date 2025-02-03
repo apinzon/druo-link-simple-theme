@@ -47,6 +47,17 @@ if ( ! function_exists( 'druo_simple_widgets_init' ) ) {
                 'after_title' => '</h2>',
             )
         );
+        register_sidebar(
+            array(
+                'name' => esc_html__('Footer Mobile', 'druo'),
+                'id' => 'footer-mobile',
+                'description' => esc_html__('Add widgets here to appear in your mobile footer.', 'druo'),
+                'before_widget' => '',
+                'after_widget' => '',
+                'before_title' => '<h2 class="widget-title">',
+                'after_title' => '</h2>',
+            )
+        );
     }
     add_action('widgets_init', 'druo_simple_widgets_init');
 }

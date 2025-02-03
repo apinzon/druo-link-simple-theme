@@ -21,7 +21,15 @@
     margin-bottom: 0;
     font-size: 13px;
     flex-shrink: 0;
+
+    .footer-desktop {
+        display: block;
+    }
+    .footer-mobile {
+        display: none;
+    }
 }
+
 button, .button {
     width: auto;
     padding: 0 25px;
